@@ -1,4 +1,5 @@
 /* Base */
+
 html {
   overflow-x: hidden; }
 
@@ -247,9 +248,9 @@ a {
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  font-weight: 300;
+  font-weight: 500;
   color: #364d59;
-  font-family: "Roboto", serif; }
+  font-family: "Anton", serif; }
 
 .border-2 {
   border-width: 2px; }
@@ -1644,10 +1645,10 @@ h1, h2, h3, h4, h5,
   .box-92819 h1 {
     font-weight: 900 !important;
     font-size: 5rem;
-    font-family: "Mansalva", cursive !important; }
+    font-family: "Roboto", cursive !important; }
 
 .text-cursive {
-  font-family: "Mansalva", cursive !important; }
+  font-family: "Oswald", cursive !important; }
 
 .media-02819 {
   margin-bottom: 60px; }

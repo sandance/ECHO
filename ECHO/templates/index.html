@@ -4,12 +4,15 @@
 <html lang="en">
 
 <head>
-  <title>ECHO USA</title>
+  <title>ECHO</title>
+
+  <link rel = "icon" href="{% static 'images/ECHO-Logo-32x32.png' %}">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <link href="https://fonts.googleapis.com/css?family=Mansalva|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
@@ -60,24 +63,24 @@
           </div>
         </div>
       </div>
-      <header class="site-navbar site-navbar-target bg-secondary shadow" role="banner">
+      <header class="site-navbar site-navbar-target bg-light shadow" role="banner" style="position:fixed">
 
         <div class="container">
           <div class="row align-items-center position-relative">
             
 
             <div class="site-logo">
-              <a href="index.html" class="text-white">Fundraiser</a>
+              <!-- <a href="index.html" class="text-white">Fundraiserrr</a> -->
+              <img src="{% static 'images/ECHO-Logo-3.png' %}" width="170">
             </div>
 
-
-            <nav class="site-navigation text-left ml-auto " role="navigation">
-              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="causes.html" class="nav-link">Our Causes</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <nav class="site-navigation text-left ml-auto" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block" style="font-family: Roboto;">
+                <li class="active"><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="active"><a href="about.html" class="nav-link">ABOUT US</a></li>
+                <li class="active"><a href="causes.html" class="nav-link">OUR CAUSES</a></li>
+                <li class="active"><a href="blog.html" class="nav-link">BLOG</a></li>
+                <li class="active"><a href="contact.html" class="nav-link">CONTACT</a></li>
               </ul>
             </nav>
 
@@ -96,11 +99,9 @@
 
     <div class="owl-carousel-wrapper">
 
-      
-
       <div class="box-92819">
         <h1 class="text-white mb-3">Let's Build A Stronger Community Together</h1>
-        <p><a href="#" class="btn btn-primary py-3 px-4 rounded-0">Donate Now</a></p>
+        <!-- <p><a href="#" class="btn btn-primary py-3 px-4 rounded-2">Donate Now</a></p> -->
       </div>
 
       <div class="owl-carousel owl-1 ">
@@ -110,7 +111,6 @@
         
       </div>
     </div>
-    
 
     <div class="container">
       <div class="feature-29192-wrap d-md-flex" style="margin-top: -20px; position: relative; z-index: 2;">
@@ -131,9 +131,27 @@
 
         <div class="feature-29192 overlay-warning" style="background-image: url({% static 'images/img_1_gray.jpg' %});">
           <div class="text">
-            <span class="meta">School</span>
+            <span class="meta">Orphanage</span>
             <h3 class="text-cursive text-white h1">New Class Rooms</h3>
           </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer bg-light fixed-bottom" style="height:80px">
+      <div class="row justify-content-center p-3">
+      <!-- <div class="col-12 text-center"> --> 
+        <div class="pl-3 pr-3" style="margin-top: 8px;">
+          <h4 >QUICK DONATE</h4>
+        </div>
+
+        <div class="btn-group-lg btn-group-horizontal ml-2">
+          <button type="button" class="btn btn-primary btn-lg ml-4">$5&nbsp</button>
+          <button type="button" class="btn btn-primary btn-lg ml-4">$10</button>
+          <button type="button" class="btn btn-primary btn-lg ml-4">$20</button>
+          <button type="button" class="btn btn-primary btn-lg ml-4">$50</button>
+          <button type="button" class="btn btn-primary btn-lg ml-4">OTHER</button>
         </div>
 
       </div>
@@ -153,34 +171,34 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-4">
               <div class="cause shadow-sm">
               
                 <a href="#" class="cause-link d-block">
-                  <img src="{% static 'images/img_1.jpg'%}" alt="Image" class="img-fluid">
+                  <img src="{% static 'images/school_children.jpg'%}" alt="Image" class="img-fluid">
                   <div class="custom-progress-wrap">
-                    <span class="caption">80% complete</span>
-                    <div class="custom-progress-inner">
+                    <!-- <span class="caption">80% complete</span> -->
+                    <!-- <div class="custom-progress-inner">
                       <div class="custom-progress bg-danger" style="width: 80%;"></div>
-                    </div>
+                    </div> -->
                   </div>
                 </a>
 
                 <div class="px-3 pt-3 border-top-0 border border shadow-sm">
-                  <span class="badge-danger py-1 small px-2 rounded mb-3 d-inline-block">School</span>
+                  <span class="badge-primary py-1 small px-2 rounded mb-3 d-inline-block">Scholarship</span>
                   <h3 class="mb-4"><a href="#">Alias Odit Ipsam Quas Unde Obcaecati</a></h3>
-                  <div class="border-top border-light border-bottom py-2 d-flex">
+                  <!-- <div class="border-top border-light border-bottom py-2 d-flex">
                     <div>Donated</div>
                     <div class="ml-auto"><strong class="text-primary">$32,919</strong></div>
-                  </div>
+                  </div> -->
 
-                  <div class="py-4">
+                  <!-- <div class="py-4">
                     <div class="d-flex align-items-center">
                       <img src="{% static 'images/person_1.jpg' %}" alt="Image" class="rounded-circle mr-3" width="50">
                       <div class="">James Smith</div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               
               </div>
@@ -190,29 +208,29 @@
             <div class="cause shadow-sm">
               
                 <a href="#" class="cause-link d-block">
-                  <img src="{% static 'images/img_2.jpg' %}" alt="Image" class="img-fluid">
-                  <div class="custom-progress-wrap">
+                  <img src="{% static 'images/orphanage.jpg' %}" alt="Image" class="img-fluid">
+                  <!-- <div class="custom-progress-wrap">
                     <span class="caption">80% complete</span>
                     <div class="custom-progress-inner">
                       <div class="custom-progress bg-primary" style="width: 80%;"></div>
                     </div>
-                  </div>
+                  </div> -->
                 </a>
 
                 <div class="px-3 pt-3 border-top-0 border border shadow-sm">
-                  <span class="badge-primary py-1 small px-2 rounded mb-3 d-inline-block">Health</span>
-                  <h3 class="mb-4"><a href="#">Alias Odit Ipsam Quas Unde Obcaecati</a></h3>
-                  <div class="border-top border-light border-bottom py-2 d-flex">
+                  <span class="badge-primary py-1 small px-2 rounded mb-3 d-inline-block">Orphanage</span>
+                  <h3 class="mb-4"><a href="#">In Partnership With GiveLight Foundation</a></h3>
+                  <!-- <div class="border-top border-light border-bottom py-2 d-flex">
                     <div>Donated</div>
                     <div class="ml-auto"><strong class="text-primary">$32,919</strong></div>
-                  </div>
+                  </div> -->
 
-                  <div class="py-4">
+                  <!-- <div class="py-4">
                     <div class="d-flex align-items-center">
                       <img src="{% static 'images/person_1.jpg' %}" alt="Image" class="rounded-circle mr-3" width="50">
                       <div class="">James Smith</div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               
               </div>
@@ -224,28 +242,93 @@
               
                 <a href="#" class="cause-link d-block">
                   <img src="{% static 'images/img_3.jpg' %}" alt="Image" class="img-fluid">
-                  <div class="custom-progress-wrap">
+                  <!-- <div class="custom-progress-wrap">
                     <span class="caption">80% complete</span>
                     <div class="custom-progress-inner">
                       <div class="custom-progress bg-warning" style="width: 80%;"></div>
                     </div>
-                  </div>
+                  </div> -->
                 </a>
 
                 <div class="px-3 pt-3 border-top-0 border border ">
-                  <span class="badge-warning py-1 small px-2 rounded mb-3 d-inline-block">Livelihood</span>
+                  <span class="badge-primary py-1 small px-2 rounded mb-3 d-inline-block">Sanitation</span>
                   <h3 class="mb-4"><a href="#">Alias Odit Ipsam Quas Unde Obcaecati</a></h3>
-                  <div class="border-top border-light border-bottom py-2 d-flex">
+                  <!-- <div class="border-top border-light border-bottom py-2 d-flex">
                     <div>Donated</div>
                     <div class="ml-auto"><strong class="text-primary">$32,919</strong></div>
-                  </div>
+                  </div> -->
 
-                  <div class="py-4">
+                  <!-- <div class="py-4">
                     <div class="d-flex align-items-center">
                       <img src="{% static 'images/person_1.jpg' %}" alt="Image" class="rounded-circle mr-3" width="50">
                       <div class="">James Smith</div>
                     </div>
-                  </div>
+                  </div> -->
+                </div>
+              
+              </div>
+          </div>
+          <div class="col-md-4">
+            
+            <div class="cause shadow-sm">
+              
+                <a href="#" class="cause-link d-block">
+                  <img src="{% static 'images/healthcare.jpg' %}" alt="Image" class="img-fluid">
+                  <!-- <div class="custom-progress-wrap">
+                    <span class="caption">80% complete</span>
+                    <div class="custom-progress-inner">
+                      <div class="custom-progress bg-warning" style="width: 80%;"></div>
+                    </div>
+                  </div> -->
+                </a>
+
+                <div class="px-3 pt-3 border-top-0 border border">
+                  <span class="badge-primary py-1 small px-2 rounded mb-3 d-inline-block">Health Care</span>
+                  <h3 class="mb-4"><a href="#">Alias Odit Ipsam Quas Unde Obcaecati</a></h3>
+                  <!-- <div class="border-top border-light border-bottom py-2 d-flex">
+                    <div>Donated</div>
+                    <div class="ml-auto"><strong class="text-primary">$32,919</strong></div>
+                  </div> -->
+
+                  <!-- <div class="py-4">
+                    <div class="d-flex align-items-center">
+                      <img src="{% static 'images/person_1.jpg' %}" alt="Image" class="rounded-circle mr-3" width="50">
+                      <div class="">James Smith</div>
+                    </div>
+                  </div> -->
+                </div>
+              
+              </div>
+
+          </div>
+          <div class="col-md-4">
+            
+            <div class="cause shadow-sm">
+              
+                <a href="#" class="cause-link d-block">
+                  <img src="{% static 'images/skill_development.jpg' %}" alt="Image" class="img-fluid">
+                  <!-- <div class="custom-progress-wrap">
+                    <span class="caption">80% complete</span>
+                    <div class="custom-progress-inner">
+                      <div class="custom-progress bg-warning" style="width: 80%;"></div>
+                    </div>
+                  </div> -->
+                </a>
+
+                <div class="px-3 pt-3 border-top-0 border border ">
+                  <span class="badge-primary py-1 small px-2 rounded mb-3 d-inline-block">Skill Development</span>
+                  <h3 class="mb-4"><a href="#">Alias Odit Ipsam Quas Unde Obcaecati</a></h3>
+                  <!-- <div class="border-top border-light border-bottom py-2 d-flex">
+                    <div>Donated</div>
+                    <div class="ml-auto"><strong class="text-primary">$32,919</strong></div>
+                  </div> -->
+
+                  <!-- <div class="py-4">
+                    <div class="d-flex align-items-center">
+                      <img src="{% static 'images/person_1.jpg' %}" alt="Image" class="rounded-circle mr-3" width="50">
+                      <div class="">James Smith</div>
+                    </div>
+                  </div> -->
                 </div>
               
               </div>
@@ -254,6 +337,31 @@
         </div>
       </div>
     </div>
+
+    <!-- <div class="row justify-content-center"> -->
+<!--       
+      <div class="text-center">
+        <h2 class="title"> Our Partners</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-2 text-center">
+          <img src="{% static 'images/MAB_logo.png' %}" alt="Image">
+        </div>
+        <div class="">
+          <img src="{% static 'images/gl_logo.png' %}" alt="Image">
+        </div>
+        <div class="">
+          <img src="{% static 'images/BGS_logo.png' %}" alt="Image">
+        </div>
+        <div class="">
+          <img src="{% static 'images/iskc_logo.png' %}" alt="Image">
+        </div>
+      </div> -->
+
+
+    
+    <!-- </div> -->
 
     <div class="bg-image overlay site-section" style="background-image: url({% static 'images/hero_1.jpg' %} );">
       <div class="container">
