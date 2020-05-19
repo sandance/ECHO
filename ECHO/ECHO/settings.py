@@ -15,7 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
+#/Users/mislam/ECHO/ECHO/static
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -25,7 +25,11 @@ SECRET_KEY = 'a@4)+fr2ibva6&!yr&hcwp3+c$jkojl2n2fvsc$s^(x&9r+091'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'testserver',
+    'localhost'
+]
+
 
 LOGIN_REDIRECT_URL = '/'
 
@@ -79,10 +83,14 @@ WSGI_APPLICATION = 'ECHO.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'database1',
+        'USER': 'database1_role',
+        'PASSWORD': 'database1_password',
+        'HOST': 'database1',
+        'PORT': '5432',
     }
-}
+}   
 
 
 # Password validation
@@ -124,7 +132,10 @@ USE_TZ = True
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    '/ECHO/ECHO/static'
+    'static'
 ]
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(os.path.dirname(
+    os.path.dirname(BASE_DIR)), 'static')
+MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'media')
