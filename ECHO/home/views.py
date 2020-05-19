@@ -5,15 +5,5 @@ from django.contrib.auth import authenticate, login
 class HomepageView(TemplateView):
     template_name = 'index.html'
 
-class LoginpageView(TemplateView):
-    template_name = 'contact.html'
-
-def my_view(request):
-    username = request.POST['username']
-    password = request.POST['password']
-    user = authenticate(request, username=username, password=password)
-    if user is not None:
-        login(request, user)
-        return redirect('/')
-    else:
-        return redirect('login/')
+class ProfileView(TemplateView):
+    template_name = 'profile.html'

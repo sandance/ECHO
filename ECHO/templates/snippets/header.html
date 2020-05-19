@@ -1,5 +1,14 @@
 {% load static %}
 
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close mt-3">
+      <span class="icon-close2 js-menu-toggle"></span>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
+
 <header class="site-navbar site-navbar-target bg-light shadow" role="banner" style="position:fixed">
 
     <div class="container">
@@ -19,7 +28,17 @@
             <li class="active"><a href="contact.html" class="nav-link">CONTACT</a></li>
 
             {% if request.user.is_authenticated %}
-              <button class="btn btn-primary">LOG OUT</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown toggle rounded" data-toggle="dropdown" 
+                      aria-haspopup="true" aria-expanded="false"> <span class="icon-person mr-2"></span>MY ACCOUNT</span> </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="/profile">My Portal</a>
+                <a class="dropdown-item" href="#">My Donation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+            </div>
+              <!-- <button class="btn btn-primary">LOG OUT</button> -->
             {% endif %}
             {% if not request.user.is_authenticated %}
             <button class="btn btn-light text-primary" type="button"><a href="/account/login">LOGIN</a></button>
