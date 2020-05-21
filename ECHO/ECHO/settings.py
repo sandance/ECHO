@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'ECHO.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -90,7 +90,14 @@ DATABASES = {
         'HOST': 'database1',
         'PORT': '5432',
     }
-}   
+}  """
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 
 # Password validation
